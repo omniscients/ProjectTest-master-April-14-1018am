@@ -31,11 +31,6 @@ namespace MIS333KProject.Models
         [Display(Name = "SSN")]
         public string SSN { get; set; }
 
-        [Required(ErrorMessage = "EmpType is required.")]
-        [EnumDataType(typeof(EmpTypes))]
-        [Display(Name = "EmpType")]
-        public EmpTypes EmpType { get; set; }
-
         [Required(ErrorMessage = "Address is required.")]
         [Display(Name = "Address")]
         public string Address { get; set; }
@@ -59,6 +54,8 @@ namespace MIS333KProject.Models
         [DisplayFormat(DataFormatString = "{0:###-###-####}", ApplyFormatInEditMode = true)]
         public string phoneNumber { get; set; }
 
+        [Required(ErrorMessage = "Employee Type is required")]
+        [Display(Name = "Employee Type")]
         public EmployeeType EmployeeType { get; set; }
     }
 
