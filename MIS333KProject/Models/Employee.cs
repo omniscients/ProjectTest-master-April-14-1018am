@@ -59,8 +59,6 @@ namespace MIS333KProject.Models
         [DisplayFormat(DataFormatString = "{0:###-###-####}", ApplyFormatInEditMode = true)]
         public string phoneNumber { get; set; }
 
-        public string UserId { get; set; }
-
         public EmployeeType EmployeeType { get; set; }
     }
 
