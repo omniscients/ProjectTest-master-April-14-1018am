@@ -25,7 +25,7 @@ namespace MIS333KProject.Models
         public string LastName { get; set; }
 
         [Display(Name = "Middle Name Initial")]
-        public char MI { get; set; }
+        public char MiddleInitial { get; set; }
 
         [Required(ErrorMessage = "Social Security Number is required.")]
         [Display(Name = "SSN")]
@@ -52,7 +52,7 @@ namespace MIS333KProject.Models
         [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Not a valid Phone number")]
         [Display(Name = "Phone Number")]
         [DisplayFormat(DataFormatString = "{0:###-###-####}", ApplyFormatInEditMode = true)]
-        public string phoneNumber { get; set; }
+        public string Phone { get; set; }
 
         [Required(ErrorMessage = "Employee Type is required")]
         [Display(Name = "Employee Type")]
